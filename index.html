@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Portfolio</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background: #111;
+            color: #fff;
+            padding: 4rem 1rem;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            color: #888;
+        }
+
+        nav {
+            background: #222;
+            color: #fff;
+            padding: 1rem;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav a {
+            color: #fff;
+            margin: 0 1rem;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #00bcd4;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+
+        section {
+            background: #fff;
+            padding: 2.5rem;
+            margin-bottom: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        section h2 {
+            text-align: center;
+            margin-bottom: 1.5rem;
+            position: relative;
+        }
+
+        section h2::after {
+            content: '';
+            display: block;
+            width: 50px;
+            height: 3px;
+            background: #00bcd4;
+            margin: 0.5rem auto 0;
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 1rem;
+            text-align: center;
+        }
+
+        .skill-item {
+            background: #e0e0e0;
+            padding: 1rem;
+            border-radius: 4px;
+            font-weight: bold;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .service-item {
+            border: 1px solid #ddd;
+            padding: 1.5rem;
+            border-radius: 4px;
+            text-align: center;
+        }
+
+        .service-item h3 {
+            margin-bottom: 0.5rem;
+        }
+
+        form input, form textarea {
+            width: 100%;
+            padding: 0.75rem;
+            margin-bottom: 1rem;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        form button {
+            background: #00bcd4;
+            color: #fff;
+            padding: 0.75rem 1.5rem;
+            border: none;
+            border-radius: 4px;
+            font-size: 1rem;
+            cursor: pointer;
+        }
+
+        form button:hover {
+            background: #008cba;
+        }
+
+        footer {
+            background: #111;
+            color: #fff;
+            text-align: center;
+            padding: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <header id="about">
+        <h1>Hello, I'm Avijm Saru Magar</h1>
+        <p>Full Stack Developer & GSM Expert</p>
+    </header>
+
+    <div class="container">
+        <section>
+            <h2>About Me</h2>
+            <p>I am a Avijm Saru Magar Full Stack Developer and GSM expert from Nepal, specializing in web and software solutions. I build high-performance web applications and offer advanced mobile repair services. I'm always open to discussing new projects and remote collaborations.</p>
+        </section>
+
+        <section id="skills">
+            <h2>Technical Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-item">HTML/CSS/JS</div>
+                <div class="skill-item">Python</div>
+                <div class="skill-item">Android Dev</div>
+                <div class="skill-item">Linux Admin</div>
+                <div class="skill-item">Reverse Engineering</div>
+            </div>
+        </section>
+
+        <section id="services">
+            <h2>Services</h2>
+            <div class="services-grid">
+                <div class="service-item">
+                    <h3>Web Development</h3>
+                    <p>Building responsive and modern websites tailored to your needs.</p>
+                </div>
+                <div class="service-item">
+                    <h3>GSM & FRP Tools</h3>
+                    <p>Advanced Android repair services and software solutions.</p>
+                </div>
+                <div class="service-item">
+                    <h3>Cyber Security</h3>
+                    <p>Identifying vulnerabilities and implementing robust security measures.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Get In Touch</h2>
+            action=https://formspree.io/f/maeqbpbo
+
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea rows="5" placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Avijm Saru Magar. All rights reserved.</p>
+    </footer>
+</body>
+</html>
